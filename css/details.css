@@ -1,87 +1,104 @@
 .side-by-side-container {
     display: flex;
     align-items: center;
-    margin-left: 200px;
+    margin-left: 15%; /* Increased margin */
     height: 100vh;
-    padding: 0 5%;
+    padding: 0 7.5%; /* Increased padding */
     animation: fadeIn 2s ease-in-out;
+    justify-content: space-between;
 }
+
 .avatar-container {
     flex-shrink: 0;
     display: flex;
     align-items: flex-end;
     height: 100%;
     position: relative;
+    order: 2;
 }
 
 .profile {
-    width: 955px;
-    height: 120%;
-    object-fit: cover;
-    top: -10%;
-    transform: translateX(-300px); /* Initial position */
-    opacity: 0; /* Start invisible */
+    width: 150%; /* Increased width */
+    max-width: 1432.5px; /* Increased max-width (955 * 1.5) */
+    height: auto;
+    top: -15%; /* Increased top */
+    right: -30%; /* Increased right */
+    transform: translateX(75%); /* Adjusted transform */
+    opacity: 0;
     transition: transform 1.5s cubic-bezier(0.4, 0, 0.2, 1), opacity 1.5s ease-in-out;
 }
-
 
 .name {
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 20px;
-    font-size: 6em;
+    gap: 30px; /* Increased gap */
+    font-size: 6em; /* Increased font size (4 * 1.5) */
     font-weight: bold;
     color: white;
     font-family: "Caveat", cursive;
     font-optical-sizing: auto;
     text-align: center;
-    margin-left: -150px;
+<<<<<<< Updated upstream
+    margin-left: 0;
+    margin-top: 75vh; /* Increased margin-top */
+=======
+    margin-left: -120px;
     margin-top: 400px;
+>>>>>>> Stashed changes
     white-space: pre-line;
-    text-shadow: 0 0 10px #949292;
+    text-shadow: 0 0 15px #949292; /* Increased text-shadow */
     z-index: 2;
     animation: fadeIn 1s ease-in-out;
+    order: 1;
 }
+
 .name-gif {
-    width: 400px; /* Adjust size as needed */
+    width: 45%; /* Increased width (30 * 1.5) */
+    max-width: 600px; /* Increased max-width (400 * 1.5) */
     height: auto;
-    margin-left: 100px;
+    margin-left: 7.5%; /* Increased margin-left */
+    order: 1;
 }
 
 .text-content {
     display: flex;
     flex-direction: column;
     text-align: justify;
-    margin-top: -400px;
-    margin-left: -500px;
+    margin-top: -60vh; /* Increased margin-top */
+    margin-left: 0;
+    order: 1;
 }
 
 .text-container {
-    font-size: 2em;
+    font-size: 2.25em; /* Increased font size (1.5 * 1.5) */
     color: white;
     font-family: "Caveat", cursive;
-    max-width: 600px;
-    margin-top: -50px;
-    padding-top: 20px;
+    max-width: 90%; /* Increased max-width */
+    margin-top: -7.5%; /* Increased margin-top */
+    padding-top: 30px; /* Increased padding-top */
     z-index: 2;
-    text-shadow: 0 0 10px #afafaf;
+<<<<<<< Updated upstream
+=======
+    margin-left: 50px;
+>>>>>>> Stashed changes
     animation: fadeIn 1s ease-in-out;
+    order: 1;
 }
-
 
 .moreofme {
     display: flex;
     justify-content: left;
     animation: fadeIn 1s ease-in-out;
+    order: 1;
 }
 
 .moreofme .container {
     align-items: right;
-    padding: 30px;
-    padding-top: 50px;
-    width: 80%;
-    max-width: 800px; 
+    padding: 45px; /* Increased padding */
+    padding-top: 75px; /* Increased padding-top */
+    width: 120%; /* Increased width */
+    max-width: 1200px; /* Increased max-width */
 }
 
 .moreofme .links {
@@ -92,47 +109,46 @@
 }
 
 .moreofme .links h1 {
-    margin-top: 10px;
+    margin-top: 15px; /* Increased margin-top */
     color: #fff;
-    font-size: 4em;
-    margin-bottom: 20px;
+    font-size: 4.5em; /* Increased font size (3 * 1.5) */
+    margin-bottom: 30px; /* Increased margin-bottom */
     font-family: "Caveat", cursive;
     font-optical-sizing: auto;
-    text-shadow: 0 0 10px #afafaf;
+    text-shadow: 0 0 15px #afafaf; /* Increased text-shadow */
 }
 
 .moreofme .links .button-row {
-  display: flex;
-  justify-content: center;
-  
+    display: flex;
+    justify-content: center;
 }
 
 .moreofme .links button.links {
     background: linear-gradient(70deg, #a3a3a3 0%, #b8b8b8 100%);
     border: none;
-    border-radius: 30px;
-    padding: 15px 20px; 
-    margin: 10px; 
-    color: #fff;    
+    border-radius: 45px; /* Increased border-radius */
+    padding: 15px 22.5px; /* Increased padding */
+    margin: 15px; /* Increased margin */
+    color: #fff;
     cursor: pointer;
     transition: transform 0.2s ease, box-shadow 0.2s ease;
-    font-size: 18px; 
+    font-size: 24px; /* Increased font size (16 * 1.5) */
     letter-spacing: 1px;
     transition: 0.2s ease;
     align-items: center;
     justify-content: center;
-    box-shadow: 0 0 50px #ffffff;
+    box-shadow: 0 0 75px #ffffff; /* Increased box-shadow */
     font-family: "Caveat", cursive;
     font-optical-sizing: auto;
     z-index: 2;
-    animation: radiantGlow 3s infinite ease-in-out; /* Apply the animation */
+    animation: radiantGlow 3s infinite ease-in-out;
 }
 
 .moreofme .links button.links:hover {
-    transform: scale(1.05);
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-    box-shadow: 0 0 50px #ffffff;
-    box-shadow: 0 0 20px #ffffff, 0 0 40px rgba(255, 255, 255, 0.9); 
+    transform: scale(1.075); /* Slight increase on hover */
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.5); /* Increased box-shadow */
+    box-shadow: 0 0 75px #ffffff; /* Increased box-shadow */
+    box-shadow: 0 0 30px #ffffff, 0 0 60px rgba(255, 255, 255, 0.9); /* Increased box-shadow */
 }
 
 @keyframes fadeIn {
@@ -144,50 +160,20 @@
     }
 }
 
-@keyframes fadeAndMove {
-    0% {
-        opacity: 1;
-        transform: translateX(-300px); /* Initial position */
-    }
-    50% {
-        opacity: 0.5;
-        transform: translateX(0); /* Move to the middle */
-    }
-    100% {
-        opacity: 1;
-        transform: translateX(-300px); /* Return to original position */
-    }
-}
-
-.amazing-tabs {
-    opacity: 0; /* Start invisible */
-}
-
-.amazing-tabs {
-    opacity: 0; /* Start invisible */
-    transition: opacity 1s ease-in-out; /* Smooth fade-out transition */
-}
-
-.text-content {
-    opacity: 0; /* Start invisible */
-    transition: opacity 1s ease-in-out; /* Smooth fade-out transition */
-}
-
 @keyframes radiantGlow {
     0% {
-        box-shadow: 0 0 60px #ffffff, 0 0 20px rgba(255, 255, 255, 0.5);
+        box-shadow: 0 0 90px #ffffff, 0 0 30px rgba(255, 255, 255, 0.5); /* Increased box-shadow */
     }
     25% {
-        box-shadow: 0 0 50px #ffffff, 0 0 30px rgba(255, 255, 255, 0.7);
+        box-shadow: 0 0 75px #ffffff, 0 0 45px rgba(255, 255, 255, 0.7); /* Increased box-shadow */
     }
     50% {
-        box-shadow: 0 0 40px #ffffff, 0 0 40px rgba(255, 255, 255, 0.9);
+        box-shadow: 0 0 60px #ffffff, 0 0 60px rgba(255, 255, 255, 0.9); /* Increased box-shadow */
     }
     75% {
-        box-shadow: 0 0 50px #ffffff, 0 0 30px rgba(255, 255, 255, 0.7);
+        box-shadow: 0 0 75px #ffffff, 0 0 45px rgba(255, 255, 255, 0.7); /* Increased box-shadow */
     }
     100% {
-        box-shadow: 0 0 60px #ffffff, 0 0 20px rgba(255, 255, 255, 0.5);
+        box-shadow: 0 0 90px #ffffff, 0 0 30px rgba(255, 255, 255, 0.5); /* Increased box-shadow */
     }
 }
-

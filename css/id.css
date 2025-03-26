@@ -88,7 +88,7 @@ body {
     width:495px;
     height: 200px;
     background-size: cover;
-    border-radius: 12px;
+    border-radius: 120px;
     filter: grayscale(100%);
     transition: 0.3s ease;
 }
@@ -121,6 +121,7 @@ body {
 .container .card:hover p{
     opacity: 1;
     right: 60px;
+    
 }
 
 .container .card:hover span{
@@ -131,6 +132,7 @@ body {
 .container .card:hover .pic{
     filter: grayscale(0);
     width: 470px;
+    
 }
 
 .mel,
