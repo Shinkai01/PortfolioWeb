@@ -1,0 +1,14 @@
+# Local tooling (dev-preview config, machine-specific)
+.claude/
+.vscode/
+.idea/
+
+# OS junk
+.DS_Store
+Thumbs.db
+ehthumbs.db
+desktop.ini
+
+# Logs & temp files
+*.log
+*.tmp
